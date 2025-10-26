@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "name": "Milk",
+    "image": "/assets/product_images/milk.png",
+    "category": "Dairy",
+    "description": "Our milk is the very core of our doorstep deliveries - supporting British farms and reducing waste, it arrives fresh in return and reuse glass bottles. Excellent for frothing or doused over cereal, we pride ourselves on our delicious milk. Try our reusable bottle tops to keep it fresher even longer. We recommend trying our creamy, sustainably dreamy oat drink, too!"
+  },
+  {
+    "id": 2,
+    "name": "Vegan",
+    "image": "/assets/product_images/Vegan_Category.png",
+    "category": "Plant-based",
+    "price": "£2.50",
+    "description": "Delicious dairy-free alternatives."
+  },
+  {
+    "id": 3,
+    "name": "Bakery",
+    "image": "/assets/product_images/Bekary.png",
+    "category": "Bakery",
+    "description": "Made by independent bakers and tasty treat makers, our baked goods are so delicious, you won't mind a few crumbs. From croissants and pain au chocolat to sourdough and bloomers, order your baked goods online to make sustainability your bread and butter."
+  },
+  {
+    "id": 4,
+    "name": "Fruit Juice",
+    "image": "/assets/product_images/Fruit_Juice_Category.png",
+    "category": "Drinks",
+    "description": "Our fresh juice delivery service offers a selection of juices in return and reuse and return for recycling glass bottles. Available as one-time orders or fantastically fruity juice subscriptions."
+  },
+   {
+    "id": 5,
+    "name": "Milkshakes",
+    "image": "/assets/product_images/Luxury_Milkshake_Bundle.png",
+    "category": "Milkshakes",
+    "description": "Our milkshake brings all the boys to the yard, and they're like, how do you make them so tasty and sustainable?! Made using natural ingredients, our flavoured milk deliveries arrive in reusable glass bottles, which our milkies will collect from your doorstep once you're done."
+  },
+   {
+    "id": 6,
+    "name": "Butter & Cheese",
+    "image": "/assets/product_images/Butter&Cheese.png",
+    "category": "Creamery",
+    "description": "On a roll to save the planet, our sustainably packaged cream, butter, and cheese delivery service cuts the spread of waste like a knife through... well, you know the rest. Plus, our sustainable milkround means you can get all things dairy without moo-ving out of bed."
+  },
+   {
+    "id": 7,
+    "name": "Essentials",
+    "image": "/assets/product_images/30-essentials.png",
+    "category": "Essentials",
+    "description": "The kids are home and hungry! We've got you covered with all the breakfast essentials to keep them fuelled through half-term."
+  },
+   {
+    "id": 8,
+    "name": "Meat & Fish",
+    "image": "/assets/product_images/Meat&Fish.png",
+    "category": "Meat",
+    "description": "Unbeatable butties and fantastic fry-ups start right here! Our British meat delivery service includes banging sausages and sizzlingly good bacon, so you can start your mornings frying, without even trying."
+  },
+   {
+    "id": 9,
+    "name": "Food Cupboard",
+    "image": "/assets/product_images/Food_Cupboard_Category.png",
+    "category": "Food Cupboard",
+    "description": "Stock your cupboard with all your plastic free essentials. Snack on crisps in home compostable packaging, or try our jams, spreads, and cereal deliveries for a hearty breakfast."
+  },
+   {
+    "id": 10,
+    "name": "Doorstep Storage",
+    "image": "/assets/product_images/Doorstep_Category_Image.png",
+    "category": "Doorstep Storage",
+    "description": "Keep your deliveries cool, calm and collected with our selection of doorstep storage accessories, each designed to beat the heat and keep your products in ship shape. So you can order those tasty morning treats safely in the knowledge that our storage solutions have your produce covered."
+  }
+]
