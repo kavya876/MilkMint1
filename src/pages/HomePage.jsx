@@ -15,7 +15,40 @@ import wheelieBin from "../assets/wheelie-bin.png"
 import homePagewave2 from "../assets/homepage-wave-2.png"
 import homePagewave3 from "../assets/homepage-wave-3.png"
 import video from "../assets/MM_Doorstep_4.3.webm"
+import trustpilotLogo from "../assets/images/trustpilot-logo.svg"
+import img1  from "../assets/images/img1.png";
+import  img2 from "../assets/images/img2.png";
+import  img3  from "../assets/images/img3.png";
+import  img4  from "../assets/images/img4.png";
+import  img5  from "../assets/images/img5.png";
+import  img6  from "../assets/images/img6.png";
+import HomePageBanner from "../assets/homepage-bottom-banner.png"
+import homePagewave4 from "../assets/homepage-wave-4.png"
+import reviews from "../data/reviews.json";
+import { useState } from "react";
+
 const HomePage = () => {
+  const images = [img1, img2, img3, img4, img5, img6];
+
+const [startIndex, setStartIndex] = useState(0);
+const reviewsPerPage = 4;
+
+const handleScroll = (direction) => {
+  if (direction === "right") {
+    setStartIndex((prev) =>
+      prev + reviewsPerPage >= reviews.length ? 0 : prev + reviewsPerPage
+    );
+  } else {
+    setStartIndex((prev) =>
+      prev - reviewsPerPage < 0
+        ? reviews.length - reviewsPerPage
+        : prev - reviewsPerPage
+    );
+  }
+};
+
+const visibleReviews = reviews.slice(startIndex, startIndex + reviewsPerPage);
+
   return (
     <main className="home-container">
        
@@ -45,13 +78,9 @@ const HomePage = () => {
   <span>★</span>
   <span className="empty">★</span>
 </p>
-
         </div>
-        <img src={wave} alt="waveonbackground" className="wave" />
-        
+        <img src={wave} alt="waveonbackground" className="wave" /> 
       </div>
-
-  
 <div className="wave-content">
               <div className="wave-item">
                  <img src={milkIcon} alt="Sustainable essentials" />
@@ -173,7 +202,61 @@ const HomePage = () => {
     className="sustainable-wave-bottom"
   />
 </section>
+ 
+    <section className="customer-love-section">
+      <h2 className="customer-love-title">OUR CUSTOMERS LOVE US</h2>
+      <p className="customer-love-subtext">
+        We love you too! – Follow us on Instagram <strong>@MODERMILKMAN_</strong>
+      </p>
+      
+       <div className="customer-love-gallery">
+        {images.map((src, index) => (
+          <img key={index} src={src} alt={`Customer ${index + 1}`} />
+        ))}
+      </div>
 
+      <div className="trustpilot-logo">
+        <img src={trustpilotLogo} alt="Trustpilot" />
+      </div>
+
+  <div className="review-container">
+    <button className="scroll-btn left" onClick={() => handleScroll("left")}>
+      &#8592;
+    </button>
+
+    <div className="reviews-wrapper">
+      {visibleReviews.map((r) => (
+        <div key={r.id} className="review-card">
+          <p className="stars">★★★★★</p>
+          <h4>{r.review.split(" ").slice(0, 4).join(" ")}...</h4>
+          <p>{r.review}</p>
+          <p className="author">
+            <strong>{r.name}</strong>, {r.time}
+          </p>
+        </div>
+      ))}
+    </div>
+
+    <button className="scroll-btn right" onClick={() => handleScroll("right")}>
+      &#8594;
+    </button>
+  </div>
+
+
+
+</section>
+<section className="bottom-section">
+  <div className="bottomContainer">
+    <img src={HomePageBanner} alt="HomePage Bottom Banner" className="bottombanner" />
+    <img src={homePagewave4} alt="Homepage wave4" className="wave4" />
+  </div>
+
+  <h2 className="bottomTitle">REPEAT ORDERING IS FLEXIBLE</h2>
+  <p className="bottomSubText">Find out if we deliver to your neighbourhood.</p>
+  <Link to="/Register" className="view-all-btn">
+    Get Started
+  </Link>
+</section>
 
     
     </main>

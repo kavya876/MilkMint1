@@ -1,72 +1,65 @@
 .footer {
-
   background-color: #f9f9f9;
-
   padding: 2rem;
-
-  font-family: Arial, sans-serif;
-
+  font-family: "Inter", sans-serif;
+  border-top: 1px solid #ddd;
 }
-
-
 
 .footer-top {
-
   display: flex;
-
   justify-content: space-around;
-
   flex-wrap: wrap;
-
-  margin-bottom: 1rem;
-
+  margin-bottom: 1.5rem;
 }
 
-
+.footer-section {
+  flex: 1;
+  min-width: 180px;
+  margin: 0.8rem;
+}
 
 .footer-section h4 {
-
   margin-bottom: 0.8rem;
-
+  font-size: 1.2rem;
+   color: #000;
+  font-weight: 600;
 }
-
-
 
 .footer-section ul {
-
   list-style: none;
-
   padding: 0;
-
 }
-
-
 
 .footer-section ul li {
-
   margin-bottom: 0.5rem;
-
-}
-
-
-
-.social-icons span {
-
-  margin-right: 10px;
-
+   color: #000;
+  font-weight: 500;
   cursor: pointer;
-
 }
 
 
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 800;
+}
+
+.social-icons svg:hover {
+  color: #008f6b;
+  cursor: pointer;
+}
 
 .footer-bottom {
-
   text-align: center;
-
   font-size: 0.9rem;
-
-  color: #555;
-
+  color: #000;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
 }
-
+.awards img{
+  width: 80px;
+  
+}

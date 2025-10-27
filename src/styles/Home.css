@@ -1,3 +1,12 @@
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .home-container {
   margin-top: 0; 
   font-family: "Inter", "Poppins", sans-serif;
@@ -156,9 +165,7 @@ text-align: center;
   font-weight: 600;
   color: #101111;
 }
-
 .wave-item img{
-  
     margin: 0.45;
 }
 .info-section{
@@ -169,12 +176,10 @@ text-align: center;
     
 }
 .info-section h2{
-    
  display: flex;
   justify-content: center;
   align-items: center; 
-
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     font-weight: 800;  
     line-height: 60px;
  font-family: var(--OmnipopBrush-Regular), cursive; 
@@ -183,8 +188,6 @@ color: #f3f0f0;
   padding-top: 10px;
   background-color: #495e77;
   transform: rotateZ(-2deg);
-  letter-spacing: -0.2rem;
-  word-spacing: 1 rem;
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -205,10 +208,9 @@ font-size: 1rem;
   background-color: #f2f8fb;
   padding: 2rem 4rem;
   text-align: center;
-  margin-left: 180px;
-  margin-right: 180px;
+  margin-left: 140px;
+  margin-right: 140px;
 }
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -405,4 +407,156 @@ font-size: 1rem;
   max-width: 480px;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.customer-love-section {
+  background-color: #f8e08e; 
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
+.customer-love-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  transform: rotate(-3deg);
+  margin-bottom: 0.8rem;
+}
+
+.customer-love-subtext {
+  font-size: 1.2rem;
+  color: #0e0d0d;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.customer-love-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.customer-love-gallery img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.trustpilot-logo img {
+  width: 170px;
+  
+}
+.bottom-section {
+  position: relative;
+  text-align: center;
+  background-color: #eef2f5;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.bottomContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bottombanner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wave4 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: 2;
+}
+
+.bottomTitle {
+ font-size: 1.8rem;
+  font-weight: 900;
+  background: #255163;
+  color: #fff;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  transform: rotate(-3deg);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.bottomSubText {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.review-section {
+  background: #f4dd82;
+  padding: 40px 0;
+  text-align: left;
+  overflow: hidden;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.scroll-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+}
+.scroll-btn:hover {
+  background: #e7e7e7;
+}
+
+.reviews-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+  width: 80%;
+}
+
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 260px;
+  text-align: left;
+  flex: 0 0 22%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.review-card .stars {
+  color: #00b67a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-card .author {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
 }
